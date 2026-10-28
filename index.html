@@ -17,50 +17,22 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="#top">Nikolai Sie</a>
-      <nav aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#nimloth">Nimloth Capital</a>
-        <a href="#odinsbane">Odinsbane</a>
-        <a href="#columbia">Columbia</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <div class="page">
+    <aside class="sidebar">
+      <h1 class="name"><a href="/">Nikolai Sie</a></h1>
+      <img class="portrait" src="assets/profile.jpg" alt="Nikolai Sie reading a book with the Himalayas behind him" width="750" height="1000">
+      <p class="role">Investor · Builder · Author</p>
+      <ul class="links">
+        <li><a href="mailto:nikolai.sie@gmail.com">nikolai.sie@gmail.com</a></li>
+        <li><a href="https://nimlothcapital.com" target="_blank" rel="noopener">Nimloth Capital <span aria-hidden="true">&nearr;</span></a></li>
+        <li><a href="https://odinsbane.com" target="_blank" rel="noopener">Odinsbane <span aria-hidden="true">&nearr;</span></a></li>
+      </ul>
+    </aside>
 
-  <main id="top">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Investor · Builder · Author</p>
-          <h1>Turning research into investment decisions.</h1>
-          <p class="lead">I’m Nikolai Sie. I spent eight years at Norges Bank Investment Management, most recently running a $15&nbsp;billion portfolio of Indian equities. Now I’m at Columbia, combining quantitative investing and machine learning through Nimloth Capital.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#nimloth">See Nimloth Capital</a>
-            <a class="btn btn-ghost" href="#contact">Get in touch</a>
-          </div>
-        </div>
-        <figure class="hero-photo">
-          <img src="assets/profile.jpg" alt="Nikolai Sie reading a book with the Himalayas behind him" width="750" height="1000">
-        </figure>
-      </div>
-
-      <div class="wrap">
-        <dl class="stats">
-          <div><dt>8 yrs</dt><dd>Norges Bank Investment Management</dd></div>
-          <div><dt>$15B</dt><dd>Indian equity portfolio managed</dd></div>
-          <div><dt>MBA + MS</dt><dd>Columbia University, Engineering &amp; Applied Science</dd></div>
-          <div><dt>Asia-wide</dt><dd>Algorithmic trading flow allocation</dd></div>
-        </dl>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="wrap narrow">
+    <main class="content">
+      <section id="about" class="entry">
         <p class="eyebrow">About</p>
-        <h2>From the trading desk to the research lab.</h2>
+        <h2 class="heading">From the trading desk to the research lab.</h2>
         <div class="prose">
           <p>Nikolai Sie is an investor, builder, and author from Norway, currently pursuing a dual MBA and MS in Engineering and Applied Science at Columbia University. His work brings together quantitative investing, machine learning, and the practical challenges of turning research into investment decisions.</p>
           <p>Before Columbia, Nikolai spent eight years at Norges Bank Investment Management, based in Singapore. He worked across Asian equity trading and emerging markets portfolio management, most recently managing a $15 billion portfolio of Indian equities. Alongside his investment responsibilities, he developed trading analytics and ran algorithmic trading flow allocation across Asia. His experience spans hybrid fundamental and systematic investment strategies, tactical trading around market events, capital markets transactions, and risk management at scale.</p>
@@ -68,86 +40,44 @@
           <p>Nikolai is also the author of <em>Odinsbane: The Waters of Mimir</em>, a fantasy novel rooted in Norse mythology. Writing offers a connection to his Norwegian heritage and a different outlet for his curiosity—exploring the legacy of violence, ambition, and power through fiction.</p>
           <p>Outside investing, engineering, and writing, his interests include fitness and mountaineering.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="nimloth" class="section section-dark">
-      <div class="wrap feature">
-        <div class="feature-copy">
-          <p class="eyebrow">01 · Research</p>
-          <h2>Nimloth Capital</h2>
-          <p class="tagline">Market insights with academic rigor.</p>
-          <p>A two-year research program in market data, artificial intelligence, and quantitative trading. The site is the public record of the work: methods, results, and the systems beneath them.</p>
-          <ul class="ticks">
-            <li>AI-driven investment strategy research</li>
-            <li>Open methods and published results</li>
-            <li>Independent quantitative research and engineering</li>
-          </ul>
-          <a class="btn btn-gold" href="https://nimlothcapital.com" target="_blank" rel="noopener">Visit nimlothcapital.com <span aria-hidden="true">&rarr;</span></a>
-        </div>
-        <a class="shot" href="https://nimlothcapital.com" target="_blank" rel="noopener" aria-label="Visit nimlothcapital.com">
-          <span class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><b>nimlothcapital.com</b></span>
-          <img src="assets/nimloth.jpg" alt="Screenshot of the Nimloth Capital website" width="1280" height="800" loading="lazy">
+      <p class="eyebrow eyebrow-projects">Projects</p>
+
+      <section id="nimloth" class="entry card">
+        <p class="card-label">01 · Research</p>
+        <h3 class="title"><a href="https://nimlothcapital.com" target="_blank" rel="noopener">Nimloth Capital: Quantitative Market Research</a></h3>
+        <p>A two-year research program in market data, artificial intelligence, and quantitative trading, published openly: methods, results, and the systems beneath them. The flagship post, <em>Putting the data to work</em>, is an interactive global stock momentum snapshot. It relates past momentum signals to forward returns across major markets, with filters for date, country, market-cap bucket, and aggregation method.</p>
+        <a class="media" href="https://nimlothcapital.com/research/momentum" target="_blank" rel="noopener" aria-label="Open the Nimloth Capital momentum research post">
+          <img src="assets/nimloth-momentum.jpg" alt="Heat map from Nimloth Capital's global stock momentum snapshot, relating momentum metrics to forward returns" width="1180" height="890" loading="lazy">
         </a>
-      </div>
-    </section>
+      </section>
 
-    <section id="odinsbane" class="section">
-      <div class="wrap feature feature-flip">
-        <div class="feature-copy">
-          <p class="eyebrow">02 · Writing</p>
-          <h2>Odinsbane</h2>
-          <p class="tagline"><em>The Waters of Mimir</em></p>
-          <p>A fantasy novel rooted in Norse mythology. Two siblings who grew up in the ruins of Odin’s mistakes set out to teach the king of the gods that his arrogance has consequences, and find a world of lore and witchcraft where great powers battle with brutal might and ruthless deceit.</p>
-          <p class="muted">Self-published, and a different outlet for the same curiosity about power, ambition, and its legacy.</p>
-          <a class="btn btn-primary" href="https://odinsbane.com" target="_blank" rel="noopener">Visit odinsbane.com <span aria-hidden="true">&rarr;</span></a>
-        </div>
-        <a class="shot" href="https://odinsbane.com" target="_blank" rel="noopener" aria-label="Visit odinsbane.com">
-          <span class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><b>odinsbane.com</b></span>
+      <section id="odinsbane" class="entry card">
+        <p class="card-label">02 · Writing</p>
+        <h3 class="title"><a href="https://odinsbane.com" target="_blank" rel="noopener">Odinsbane: The Waters of Mimir</a></h3>
+        <p>A fantasy novel rooted in Norse mythology. Two siblings who grew up in the ruins of Odin’s mistakes set out to teach the king of the gods that his arrogance has consequences, and find a world of lore and witchcraft where great powers battle with brutal might and ruthless deceit. Self-published, and a different outlet for the same curiosity about power, ambition, and its legacy.</p>
+        <a class="media" href="https://odinsbane.com" target="_blank" rel="noopener" aria-label="Visit odinsbane.com">
           <img src="assets/odinsbane.jpg" alt="Screenshot of the Odinsbane website showing the book cover" width="1280" height="800" loading="lazy">
         </a>
-      </div>
-    </section>
+      </section>
 
-    <section id="columbia" class="section section-alt">
-      <div class="wrap">
-        <p class="eyebrow">03 · Coursework</p>
-        <h2>Columbia Coursework</h2>
+      <section id="columbia" class="entry card">
+        <p class="card-label">03 · Coursework</p>
+        <h3 class="title">Columbia Coursework</h3>
+        <p class="meta">Human Centered Design · Final project</p>
+        <h4 class="subtitle">Line: Subway Navigation for International Professionals</h4>
+        <p>New York draws thousands of international professionals every year. They arrive feeling ready, but then they reach the subway. Finding the right exits and platforms is like navigating a jungle underneath the city.</p>
+        <p>What they need is Line. With each subway exit numbered, the Line app maps every detail of your fastest route and buzzes if you head the wrong way. Line can connect to any wearable device and project augmented reality arrows into your phone or smart glasses that ease your transition between the underground and the city.</p>
+        <p>Line is how the international professional navigates New York with confidence.</p>
+        <video class="media" controls preload="metadata" playsinline aria-label="Elevator pitch video for Line, a subway navigation app" src="assets/line-pitch.mp4#t=0.1"></video>
+      </section>
 
-        <article class="project">
-          <div class="project-video">
-            <video controls preload="metadata" playsinline aria-label="Elevator pitch video for Line, a subway navigation app" src="assets/line-pitch.mp4#t=0.1"></video>
-          </div>
-          <div class="project-copy">
-            <p class="project-meta">Human Centered Design · Final project</p>
-            <h3>Line</h3>
-            <p class="tagline">Navigate New York with confidence.</p>
-            <p>New York draws thousands of international professionals every year. They arrive feeling ready, but then they reach the subway. Finding the right exits and platforms is like navigating a jungle underneath the city.</p>
-            <p>What they need is Line. With each subway exit numbered, the Line app maps every detail of your fastest route and buzzes if you head the wrong way. Line can connect to any wearable device and project augmented reality arrows into your phone or smart glasses that ease your transition between the underground and the city.</p>
-            <p><strong>Line is how the international professional navigates New York with confidence.</strong></p>
-          </div>
-        </article>
-
-        <p class="more-soon">More projects in the works&hellip;</p>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="wrap narrow center">
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s talk.</h2>
-        <p class="muted">For internships, research collaboration, investor conversations, or just to say hello.</p>
-        <a class="btn btn-primary" href="mailto:nikolai.sie@gmail.com">nikolai.sie@gmail.com</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <p>&copy; <span id="year">2026</span> Nikolai Sie</p>
-      <p><a href="https://nimlothcapital.com" target="_blank" rel="noopener">Nimloth Capital</a> · <a href="https://odinsbane.com" target="_blank" rel="noopener">Odinsbane</a></p>
-    </div>
-  </footer>
+      <footer class="footer">
+        <p>&copy; <span id="year">2026</span> Nikolai Sie</p>
+      </footer>
+    </main>
+  </div>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
