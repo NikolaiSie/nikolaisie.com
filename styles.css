@@ -54,6 +54,20 @@ a { color: var(--accent); }
 section { padding: 24px 0; }
 h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
 
+.about { display: flex; gap: 32px; align-items: flex-start; }
+.portrait {
+  flex: 0 0 240px;
+  width: 240px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.bio p:first-child { margin-top: 0; }
+@media (max-width: 640px) {
+  .about { flex-direction: column; }
+  .portrait { flex-basis: auto; width: 100%; max-width: 280px; }
+}
+
 .cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 .card {
   display: block;
